@@ -31,7 +31,7 @@ Please remember this for all experiments.
 - Finally, you upload the codes to Arduino.
 
 *Thank you very much**
-## let's start :) 
+## let's start!
 ## 1-Detecting fire
 we will learn how to detect fire using a flame sensor.
 # Components and supplies:
