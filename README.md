@@ -31,7 +31,7 @@ Please remember this for all experiments.
 - Finally, you upload the codes to Arduino.
 
 *Thank you very much**
-## let's start!
+## let's start :) 
 ## 1-Detecting fire
 we will learn how to detect fire using a flame sensor.
 # Components and supplies:
@@ -204,8 +204,7 @@ void loop() {
 ```
 ## 4- Make a siren 
 
-We will learn how to use button controlled siren with different LED transi-
-tions.
+We will learn how to use button controlled siren with different LED transitions.
 # Components and supplies:
  - Arduino
  - Buzzer
