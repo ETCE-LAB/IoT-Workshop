@@ -135,22 +135,22 @@ we will learn how to detect fire using a flame sensor.
 # Components and supplies:
 - Flame Sensor (model with an analog out) -> These types of sensors are used for short range fire detection(up to about
 3 feet)
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/128.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/128.jpg)
 
 
 - Male to female jumper wires
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/129.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/129.jpg)
 
 
 - An arduino, any flavor
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/333.jpeg)
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/125.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/333.jpeg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/125.jpg)
 
 
 - Lighter or another flame source for testing
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/126.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/126.jpg)
 NOTE : If you are using arduino nano 33, then you need to use " BreadBoard"also.
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/127.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/127.jpg)
 
 
 Important pins in EVERY arduino
@@ -165,7 +165,7 @@ To wire the flame sensor to the arduino simply connect the following as shown:
 - VCC -> 5v
 - GND -> GND
 - A0 -> Analog in 0 
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/134.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/134.jpg)
 
 
 ```python
@@ -206,17 +206,17 @@ delay (1); // delay between reads
 we will learn how to create a smoke detector using gas sensor.
 # Components and supplies:
 - Resistor 220 ohm
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/131.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/131.jpg)
 
 
 - Gas sensor 
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/132.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/132.jpg)
 
 
 - An arduino, any flavor
 - Buzzer
 A buzzer is an electronic device that emits sound when it is powered bya 5-volt electrical current. These buzzers are commonly used in alarms, timers, confirmation of user input.
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/123.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/123.jpg)
 
 - Breadborad
 - Jumper wires
@@ -230,7 +230,7 @@ Gas Detection sensor connection :
 Buzzer connection :
 - long pin of buzzer -> D8
 - short pin of buzzer -> GND
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/121.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/121.jpg)
 
 ```python
 const int gasSensorPin = --- ; 
@@ -259,10 +259,10 @@ void loop() {
 We will learn to be alert by LED lights if there is a vibration.
 # Components and supplies:
 - vibration sensor 
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/120.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/120.jpg)
 - Arduino
 - Green and red led lights
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/124.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/124.jpg)
 
 - Jumper wires
 # Wiring to an Arduino:
@@ -276,7 +276,7 @@ LED connection :
 - positive ( long leg ) -> D13
 - negative (short leg ) -> GND
 
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/119.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/119.jpg)
 
 ```python
 const int vibrationSensorPin = ---; 
@@ -320,7 +320,7 @@ led connection :
 - short leg -> 220 ohm -> GND
 - long leg -> D13
 
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/114.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/114.jpg)
 
 ```python
 int i; // defines the variable "i" used in a for loop
@@ -360,7 +360,7 @@ we will learn how to turn on and turn off the LED light using Push button switch
 # Components and supplies:
 - Arduino UNO
 - Pushbutton switch
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/117.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/117.jpg)
 
 - Resistor 220 ohm
 - Breadboard
@@ -368,7 +368,7 @@ we will learn how to turn on and turn off the LED light using Push button switch
 - LED Light
 # Wiring to an Arduino:
 Please follow the diagram.
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/112.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/112.jpg)
 
 ```python
 int led1 =2;
@@ -404,11 +404,11 @@ we will learn how to turn on and turn off the LED light using ultrasonic sensor 
 - LED light
 - Jumper wires
 - Ultrasonic sensor
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/111.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/111.jpg)
 
 # Wiring to an Arduino: 
 please follow the diagram.
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/18.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/18.jpg)
 ```python
 const int trigPin = 9; 
 const int echoPin = 10; 
@@ -444,12 +444,12 @@ will will learn how to turn on the servo motor regarding to distance detection b
 - Arduino UNO
 - ultrasonice sensor 
 - servo motor
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/13.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/13.jpg)
 - jumper wires
 - breadboard
 # Wiring to an Arduino: 
 please follow the diagram.
-![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/new_images/15.jpg)
+![Alt Text](https://github.com/ETCE-LAB/IoT-Workshop/raw/main/images/15.jpg)
 ```python
 #include <Servo.h>
 const int trigPin = 9; 
