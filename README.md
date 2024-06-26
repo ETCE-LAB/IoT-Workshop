@@ -26,7 +26,7 @@ Please remember this for all experiments.
 - Finally, you upload the codes to Arduino.
 
 *Thank you very much**
-## let's start :) 
+
 
 ## " A little prerequisite"
 
