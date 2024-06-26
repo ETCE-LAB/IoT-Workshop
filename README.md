@@ -27,6 +27,109 @@ Please remember this for all experiments.
 
 *Thank you very much**
 ## let's start :) 
+
+## " A little prerequisite"
+
+## Installing all requisite software
+# Arduino Desktop IDE
+- # Debian based distributions
+```python
+apt install arduino
+```
+- # Archlinux based distributions
+```python
+pacman -S arduino
+```
+## Arduino Web editor (Optional)
+- Get started at: https://create.arduino.cc/editor
+- Also requires Arduino Create Agent – Not straightforward to install
+- Daily compile limit
+
+## Installing Prerequisite sensor libraries
+1- Tools > Manage Libraries...
+2- Install the following libraries and their respective dependencies:
+- Adafruit BME280 Library
+- WifiNINA
+
+## Introduction to Arduino Nano 33 IoT
+- A small, inexpensive feature–rich microcontroller board great for general purpose IoT
+applications.
+- Open–Source Hardware !
+- Includes many essential IoT specific onboard modules :
+    - WiFi & Bluetooth (incl. BLE)
+    - 3-axis Accelerometer & Gyroscope
+    - Built-in programmable LED
+    - ...
+
+## Practical Guide to breadboards
+1- Why breadboards?
+- Makes prototyping easier
+- Solderless connections
+- A good way to hold everything in place
+- Share VCC and GND pin connections
+- Most boards (Like the Arduino Nano 33 IoT) are designed to sit perfectly on a breadboard.
+
+2- Anatomy of a Breadboard
+- Power lines (+/-) on both sides connected in parallel vertically.
+- Bus lines [a,b,c,d,e] & [f,g,h,i,j] are connected in parallel horizontally.
+- You build circuits by running Jumper cables between pins and to sensors.
+
+## General safety guide (to ensure no broken arduinos/sensors/shortcircuits)
+1- ALWAYS match wire colors!
+      - In particular: Use RED wires for VCC/+3.3V/+5V (positive terminal) and BLACK wires for GND (Ground pins, i.e negative terminal)
+ 2- Do not change wiring while the board is connect to power (usb)!
+ 3- Tripple-check wiring connections (especially +3V3/VCC/GND connections)!
+      - If you are unsure about wiring –> Please ask us to check for you.
+4- Do not push/pull pins and cables too much -> they may break.
+ 5-Do not let any sensor wet (The soil moisture sensor can only be put into damp soil upto the indicated maximum limit).
+6- Please be careful with the green plastic boxes (They are kinda flimsy).
+
+## Introduction to Arduino Programming
+Simple example for turning the LED on and off.
+# 1- Basic Structure
+## Setup Function
+Runs exactly once at the beginning
+```python
+void setup() {
+// initialize digital pin LED_BUILTIN as an output.
+pinMode(LED_BUILTIN, OUTPUT);
+}
+```
+## Main Loop
+Runs repeatedly forever
+```python
+void loop() {
+Serial.println("Turning on LED"); // Send some text to the Serial interface
+digitalWrite(LED_BUILTIN, HIGH);
+// turn the LED on (HIGH is the voltage
+level)
+delay(1000);
+// wait for a second
+Serial.println("Turning off LED"); // Send some text to the Serial interface
+digitalWrite(LED_BUILTIN, LOW);
+// turn the LED off by making the voltage
+LOW
+delay(1000);
+// wait for a second
+}
+```
+# Compiling and Uploading to the Board
+1. After double–checking jumper wire connections, connect the Arduino board to the computer using the microUSB cable.
+2. Compile and Verify the code
+3. Upload to the Arduino board
+4. Profit
+
+# Check Serial Messages
+1. Tools > Serial Monitor
+2. Tools > Serial Plotter
+        - Plots a graph (For example sensor data)
+        - Requires numeric serial messages:
+```python
+Serial.println(100);
+...
+```
+## Let's move to the experiments
+# Enjoy learning by doing :) 
 ## 1-Detecting fire
 we will learn how to detect fire using a flame sensor.
 # Components and supplies:
